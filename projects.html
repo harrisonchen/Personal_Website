@@ -1,0 +1,78 @@
+<html>
+<title>Harrison Chen - Projects</title>
+<body>
+
+<link href="homescreen.css" type="text/css" rel="stylesheet" />
+
+<div id="navbar">
+<h1>Harrison Chen</h1>
+    <div id="navlinks">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" style="color:white;">Projects</a>
+    <a href="cv.html">CV</a>
+    <a href="extras.html">Extras</a>
+    </div><!--navlinks-->
+</div><!--navbar-->
+
+<h1 class="header">Projects</h1>
+<hr />
+
+<p class="subheader">My Source Code</p>
+<p><a href="https://github.com/hchen030">https://github.com/hchen030</a></p>
+<p class="subheader">Snake Game Clone(C, AVR, UART)</p>
+<img id="hc_snake" src="hc_snake.jpg" alt="Snake Game Clone" />
+<p><b><u>The Project</u></b><br />
+	This is my class project for Intro. to Embedded Systems. It is a game based
+	very closely to the game many of you know as <i>Snake</i>. The game I implemented
+	has all the <i>Snake</i> features such as the snake grows when it eats the random
+	apples and dies when it makes contact with itself. The new implementations I added
+	were 3 levels of difficulty: Level 1 - Easy(slow speed), Level 2 - Normal(normal speed),
+	<br />Level 3 - Hard(normal speed with obstacles).<br /><br />This project first introduced 
+	Time-Multiplexing for me. I had to figure out how to display the growing snake on the 8x8 
+	LED Matrix with only certain LEDs on. What was done was I made the LED matrix flash column
+	by column at a speed where it seems like the whole matrix was on. At those certain columns 
+	that were on, I were flash on the rows where the snake would be corresponding to the columns. 
+	This project also introduced me to Daisy-Chaining and UART serial communication. With 
+	daisy-chaining, I was able to get a lot more from only using 4 output pins on the ATmega32. 
+	The shift registers output would be linked to the input of another shift register and this
+	will created a chain. UART introduced me to serial communication between microcontrollers
+	where I had one microcontroller taking care of input and another microcontroller taking 
+	care of output.
+	<br /><br />
+	<b><u>Components Used</u></b><br />
+	1x Breadboard, 2x ATmega32 MicroControllers, 1x 8x8 RG LED Matrix, 1x 16-input Keypad, 
+	1x LCD Display, 2x 7-Segment LED Displays, 5x Shift Registers, 1x Speaker, and a LOT of
+	330-Ohm Resistors.<br /> <br />
+	<b><u>Concepts Covered</u></b><br />
+	Time-Oriented Design, Time-Multiplexing, Concurrent Tasks, Finite-State Machines, UART, and Daisy-Chaining.
+</p>
+
+
+
+<p class="subheader">Brick-Breaker Clone(C, C++, Arduino, I&sup2;C)</p>
+<div class="overflow">
+<img id="hc_bb1" src="hc_bb1.png" alt="Brick-Breaker Clone" />
+<p><b><u>The Project</u></b><br />
+	This was a fun project during the Summer of 2013 after purchasing my first Arduino Uno.
+	The game I implemented this time is a clone of <i>Brick-Breaker</i>. The gameplay is 
+	exactly as <i>Brick-Breaker</i>. Instead of using a Keypad as movement for the gameworld,
+	I used a 3-Axial Gyroscope/Accelerometer for the movement of the paddle. The 3-Axial 
+	Gyroscope/Accelerometer can output x, y, and z range of motion. That output is then inputted
+	into the Arduino Uno's Analog Input and then I mapped the input range to a specific range to
+	make the paddle move at a certain speed. The paddle is moved left 
+	and right just using the tilts in the x horizontal range. The project allowed me to expand
+	my knowledge of embedded systems to tilt and accerating motion, ADC and DAC inputs, as well 
+	as refreshed programming embedded systems. This is also the first time I implemented my own
+	libraries to use as the Brick-Break objects for the game.
+	<br /><br />
+	<b><u>Components Used</u></b><br />
+	2x Breadboards, 1x Arduino Uno, 1x 3-Axial Gryoscope/Accelerometer, 
+	1x 8x8 RGB LED Matrix, 4x Shift Registers, and many 330-Ohm Resistors.<br /><br />
+	<b><u>Concepts Covered</u></b><br />
+	Object-Oriented and Time-Oriented Design, I<sup>2</sup>C, Time-Multiplexing, Concurrent 
+	Tasks, Finite-State Machines, ADC and DAC input/ouput, Daisy-Chaining.
+
+</div>
+</body>
+</html>

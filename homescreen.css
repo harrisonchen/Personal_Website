@@ -1,0 +1,123 @@
+html{
+    background-image: url(woodwall.jpg);
+}
+body{
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    font-family: "Arial";
+}
+#page_struct{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 100%;
+    font-family: "Arial";
+}
+#navbar{
+    background-color: #505050;
+}
+#navbar h1{
+    float: left;
+    border: 2px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px; 
+    padding-bottom: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: white;
+}
+#navlinks{
+    border: 2px solid; 
+    padding-top: 20px;
+    padding-bottom: 18px;
+    padding-left: 45%;
+}
+#navlinks a{
+    color: gray;
+    padding-right: 15px;
+    text-decoration: none;
+}
+#navlinks a:hover{
+    color: white;
+}
+#intro p, #bio p{
+    margin-bottom: 0px;
+}
+#hcBoat{
+    float: left;
+    width: 300px;
+    height: 240px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#hcCar{
+    clear: left;
+    float: right;
+    width: 300px;
+    height: 240px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#hcHike img{
+    width: 300px;
+    height: 240px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+#hc_bb1{
+    clear: left;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    height: 360px;
+}
+#hc_snake{
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    padding-left: 8px;
+    height: 360px;
+}
+.header{
+    clear: left;
+    font-size: 24px;
+}
+.subheader{
+    clear: left;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.header,.subheader, p{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+hr{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+p{
+    margin-top: 0px;
+}
+#resume{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+div.overflow{overflow: auto;}
+#school{
+	float: left;
+}
+#grad, #gpa{
+	float: right;
+	clear: right;
+}
+#pl, #proj, #dt, #cw, #os{
+	clear: left;
+}
